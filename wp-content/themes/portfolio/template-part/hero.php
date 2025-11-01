@@ -6,7 +6,7 @@
                 <div class="col-lg-12">
                     <div class="banner-style-one-items">
                         <div class="info">
-                            <h1>Hey <img src="assets/img/icon/hand.png" alt="Icon"> I'm Dalton </h1>
+                            <h1>Hey 👋 I'm Mokaddes Ali </h1>
                             <h2>
                                 <span class="header-caption" id="page-top">
                                     <!-- type headline start-->
