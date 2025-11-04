@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800&display=swap');
 
 /*------ Header start -----*/
-header {
-  background-color: #FFFCF4;
+.header-section {
+  background-color: #061016;
   width: 100%;
   height: auto;
   position: sticky;
@@ -15,7 +15,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 36px 0 16px 0;
+  padding: 30px 0 16px 0;
 }
 
 .logo a img {
@@ -32,7 +32,7 @@ header {
   gap: 70px;
 }
 
-/* ✅ Desktop menu row */
+/* Desktop menu row */
 nav.main-menu ul {
   display: flex;
   flex-direction: row;
@@ -41,7 +41,7 @@ nav.main-menu ul {
   margin-top: 2px;
 }
 
-/* ✅ Mobile menu column */
+/* Mobile menu column */
 nav.main-menu-phone ul {
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@ nav.main-menu-phone ul {
 
 .main-menu ul li a,
 .main-menu-phone ul li a {
-  color: #5F5B53;
+  color: white;
   text-align: center;
   font-weight: 400;
   line-height: 175%;
@@ -619,9 +619,6 @@ p {
 	background: var(--bg-gray);
 }
 
-.bg-dark .bg-gray {
-	background-color: var(--dark-secondary);
-}
 
 .bg-gray-secondary {
 	background: var(--bg-gray-secondary);
@@ -713,8 +710,8 @@ p {
 }
 
 .default-padding {
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2941,12 +2938,7 @@ a.btn-circle-large img {
 
 /* ============================================================== 
      # Footer
-=================================================================== */
-.footer-logot img {
-	height: 70px;
-	margin-bottom: 30px;
-}
-
+/* =================================================================== **/
 ul.foter-menu {
 	margin: 0;
 	padding: 0;

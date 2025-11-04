@@ -10,7 +10,7 @@
 
 <body <?php body_class(); ?> class="m-0 p-0">
 
-    <header class="" style="background-color: #061016;">
+    <header class="header-section">
         <div class="container">
             <div class="header-wrapper">
                 <!----- logo ----->
