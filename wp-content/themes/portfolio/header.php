@@ -26,18 +26,13 @@
 
                 <!----- main-menu and button ----->
                 <div class="menu-button-wrapper">
+
                     <nav class="main-menu">
                         <?php wp_nav_menu(array(
-                'theme_location' => 'portfolio_header_menu',
-                 'fallback_cb' => false
-              )); ?>
-
+                        'theme_location' => 'portfolio_header_menu', 'fallback_cb' => false
+                         )); ?>
                     </nav>
-
-                    <!----- sign-up-btn ----->
-                    <div class="button btn-black">
-                        <a href="#">Sign Up</a>
-                    </div>
+                    
                     <!----- phone menu ----->
                     <div class="menu-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">

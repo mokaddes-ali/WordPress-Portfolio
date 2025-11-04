@@ -11,7 +11,9 @@
                         'fallback_cb' => false
                          )); ?>
                         </ul>
-                        <p>Copyright &copy; 2024 Antux. All Rights Reserved</p>
+                        <p>
+                            <?php echo esc_html__('Copyright', 'portfolioTheme'); ?> &copy; <?php echo date('Y');?> <?php bloginfo('name');?> <?php echo esc_html__('All rights reserved', 'portfolioTheme'); ?>
+                        </p>
                     </div>
                 </div>
             </div>

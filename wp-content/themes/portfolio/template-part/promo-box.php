@@ -1,6 +1,6 @@
    <!-- Start Promo box
     ============================================= -->
-    <div class="promot-box-area default-padding">
+    <div id="promo-box" class="promot-box-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 offset-xl-2">
