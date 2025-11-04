@@ -237,10 +237,6 @@ nav.main-menu-phone ul {
 	--font-heading: 'Barlow', sans-serif;
 	--fontawesome: "Font Awesome 5 Pro";
 	--black: #000000;
-	--dark: #120f12;
-	--dark-secondary: #1a1a1a;
-	--dark-optional: #313030;
-	--dark-style-two: #1c1c1c;
 	--white: #ffffff;
 	--color-primary: #FFAE00;
 	--color-secondary: #F54200;
@@ -362,19 +358,6 @@ hr {
 	border-top: 1px solid #eeeeee;
 }
 
-pre {
-	display: block;
-	margin: 0 0 30px;
-	padding: 9.5px;
-	word-wrap: break-word;
-	word-break: break-all;
-	color: #333333;
-	border: 1px solid #ededed;
-	border-radius: inherit;
-	background-color: #f9f9f9;
-	font-size: 13px;
-	line-height: 1.42857143;
-}
 
 input {
 	border: 1px solid #e7e7e7;

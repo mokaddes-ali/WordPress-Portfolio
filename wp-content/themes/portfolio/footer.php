@@ -7,7 +7,7 @@
                     <div class="footer-items text-center">
                         <ul class="foter-menu">
                         <?php wp_nav_menu(array(
-                        'theme_location' => 'portfolio_header_menu',
+                        'theme_location' => 'portfolio_footer_menu',
                         'fallback_cb' => false
                          )); ?>
                         </ul>

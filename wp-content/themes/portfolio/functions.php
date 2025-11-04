@@ -16,6 +16,8 @@ function portfolioTheme_theme_register(){
     register_nav_menus(array(
     'portfolio_header_menu' => __('Portfolio Header Menu','portfolioTheme'),
     'portfolio_mobile_menu' => __('Portfolio Mobile Menu','portfolioTheme'),
+    'portfolio_footer_menu' => __('Portfolio Footer Menu','portfolioTheme'),
+    
 
     ));
 }
