@@ -379,11 +379,6 @@ textarea:focus {
 	box-shadow: inherit;
 }
 
-select:focus {
-	outline: none;
-	-webkit-box-shadow: inherit;
-	box-shadow: inherit;
-}
 
 ul {
 	list-style-type: none;
