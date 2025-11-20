@@ -1,6 +1,6 @@
 <?php 
 
-function portfolioTheme_theme_register(){
+function mokaddesAli_theme_register(){
 
     add_theme_support('post-thumbnails');
 
@@ -14,19 +14,19 @@ function portfolioTheme_theme_register(){
     
 
     register_nav_menus(array(
-    'portfolio_header_menu' => __('Portfolio Header Menu','portfolioTheme'),
-    'portfolio_mobile_menu' => __('Portfolio Mobile Menu','portfolioTheme'),
-    'portfolio_footer_menu' => __('Portfolio Footer Menu','portfolioTheme'),
+    'portfolio_header_menu' => __('Portfolio Header Menu','mokaddesAli'),
+    'portfolio_mobile_menu' => __('Portfolio Mobile Menu','mokaddesAli'),
+    'portfolio_footer_menu' => __('Portfolio Footer Menu','mokaddesAli'),
     
 
     ));
 }
 
-add_action('after_setup_theme','portfolioTheme_theme_register');
+add_action('after_setup_theme','mokaddesAli_theme_register');
 
 
 
-function portfolioTheme_theme_enqueue_styles() {
+function mokaddesAli_theme_enqueue_styles() {
     //Google Font
      wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Sen:wght@400..800&display=swap', array(), null);
     // Slick CSS
@@ -53,4 +53,7 @@ function portfolioTheme_theme_enqueue_styles() {
     // Custom JS
     wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), time(), true);
 }
-add_action('wp_enqueue_scripts', 'portfolioTheme_theme_enqueue_styles');
+add_action('wp_enqueue_scripts', 'mokaddesAli_theme_enqueue_styles');
+
+
+get_template_part('inc/CPT/services');
