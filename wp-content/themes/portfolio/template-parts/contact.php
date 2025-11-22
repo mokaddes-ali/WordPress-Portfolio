@@ -6,50 +6,12 @@
                 
                 <h1 class="fixed-text">Contact Me</h1>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <form action="assets/mail/contact.php" method="POST" class="contact-form contact-form">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <button class="btn-style-regular" type="submit" name="submit" id="submit">
-                                        <span>Get in Touch</span> <i class="fas fa-arrow-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- Alert Message -->
-                            <div class="col-lg-12 alert-notification">
-                                <div id="message" class="alert-msg"></div>
-                            </div>
-                        </form>
-                    </div>
+                    
+                    <?php
+                    echo do_shortcode('[contact-form-7 id="f843d98" title="Contact form 1"]');
+                    ?>
+
+                    
                 </div>
 
                 <div class="contact-illustration">
