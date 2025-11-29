@@ -7,12 +7,16 @@
                     <div class="footer-items text-center">
                         <ul class="foter-menu">
                         <?php wp_nav_menu(array(
-                        'theme_location' => 'portfolio_footer_menu',
+                        'theme_location' => 'aliportfolio_footer_menu',
                         'fallback_cb' => false
                          )); ?>
                         </ul>
                         <p>
-                            <?php echo esc_html__('Copyright', 'portfolioTheme'); ?> &copy; <?php echo date('Y');?> <?php bloginfo('name');?> <?php echo esc_html__('All rights reserved', 'portfolioTheme'); ?>
+                            <?php echo esc_html__('Copyright', 'aliportfolio'); ?>
+                             &copy; 
+                             <?php echo date('Y');?> 
+                             <?php bloginfo('name');?>
+                              <?php echo esc_html__('All rights reserved', 'aliportfolio'); ?>
                         </p>
                     </div>
                 </div>

@@ -28,8 +28,9 @@
                 <div class="menu-button-wrapper">
 
                     <nav class="main-menu">
-                        <?php wp_nav_menu(array(
-                        'theme_location' => 'portfolio_header_menu', 'fallback_cb' => false
+                     <?php wp_nav_menu(array(
+                     'theme_location' => 'aliportfolio_header_menu', 
+                        'fallback_cb' => false
                          )); ?>
                     </nav>
                     
@@ -47,13 +48,13 @@
                     <!----- logo ----->
                     <div class="logo-div">
                         <div class="logo">
-                          <?php if (has_custom_logo()) : ?>
-              <?php the_custom_logo(); ?>
-            <?php else : ?>
-              <a href="<?php echo esc_url(home_url('/')); ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-logo.png" alt="<?php echo esc_attr(get_bloginfo('name'))?>" />
-              </a>
-            <?php endif; ?>
+                         <?php if (has_custom_logo()) : ?>
+                            <?php the_custom_logo(); ?>
+                            <?php else : ?>
+                            <a href="<?php echo esc_url(home_url('/')); ?>">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-logo.png" alt="<?php echo esc_attr(get_bloginfo('name'))?>" />
+                            </a>
+                            <?php endif; ?>
                         </div>
 
                         <div class="x-icon menu-btn">
@@ -67,12 +68,11 @@
 
 
                     <div class="menu-div">
-                        <nav class="main-menu-phone">
-                             <?php wp_nav_menu(array(
-                'theme_location' => 'portfolio_mobile_menu',
-                 'fallback_cb' => false
-              )); ?>
-
+                      <nav class="main-menu-phone">
+                       <?php wp_nav_menu(array(
+                            'theme_location' => 'aliportfolio_mobile_menu',
+                            'fallback_cb' => false
+                           )); ?>
                         </nav>
 
                     </div>    

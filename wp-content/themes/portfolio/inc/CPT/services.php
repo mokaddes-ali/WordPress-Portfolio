@@ -8,10 +8,10 @@
 // Register Course 
 function mokaddesAli_custome_services_register(){
     $labels = array(
-        'name'                  => _x( 'Services', 'Post type general name', 'mokaddesAli' ),
-        'singular_name'         => _x( 'Service', 'Post type singular name', 'mokaddesAli' ),
-        'menu_name'             => _x( 'Services', 'Admin Menu text', 'mokaddesAli' ),
-        'name_admin_bar'        => _x( 'Services', 'Add New on Toolbar', 'mokaddesAli' ),
+        'name'                  => __( 'Services', 'mokaddesAli' ),
+        'singular_name'         => __( 'Service', 'mokaddesAli' ),
+        'menu_name'             => __( 'Services', 'mokaddesAli' ),
+        'name_admin_bar'        => __( 'Services', 'mokaddesAli' ),
         'add_new'               => __( 'Add New', 'mokaddesAli' ),
         'add_new_item'          => __( 'Add New Service', 'mokaddesAli' ),
         'new_item'              => __( 'New Service', 'mokaddesAli' ),
