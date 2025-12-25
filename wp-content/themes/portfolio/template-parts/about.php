@@ -1,10 +1,6 @@
   <!-- Start About 
     ============================================= -->
     <div id="about" class="about-style-one-area bg-gray default-padding">
-        <div class="shape-style-one">
-            <img src="assets/img/shape/3.png" alt="Image Not Found">
-            <img class="upDownScrol" src="assets/img/shape/8.png" alt="Image Not Found">
-        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -30,7 +26,9 @@
                         <p class="split-text">
                             As a skilled web developer, I specialize in creating responsive, user-friendly websites with a focus on modern design and efficient code. I excel in front-end development, with a deep understanding of HTML, CSS, JavaScript, and various frameworks. My passion is turning ideas into functional and aesthetically pleasing digital experiences.
                         </p>
-                        <a class="btn-style-regular btn-border" href="#"><span>Learn More</span> <i class="fas fa-arrow-right"></i></a>
+                        <a class="btn-style-regular btn-border" href="#"><span>Learn More</span> 
+                        <?php get_template_part("assets/svg/right");?>
+                       </a>
                     </div>
                 </div>
             </div>

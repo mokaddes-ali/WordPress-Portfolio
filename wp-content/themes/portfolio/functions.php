@@ -1,6 +1,6 @@
 <?php 
 
-function aliportfolio_register(){
+function aliportfolio_theme_setup(){
 
     add_theme_support('post-thumbnails');
 
@@ -22,11 +22,11 @@ function aliportfolio_register(){
     ));
 }
 
-add_action('after_setup_theme','aliportfolio_register');
+add_action('after_setup_theme','aliportfolio_theme_setup');
 
 
 
-function aliportfolio_enqueue_styles() {
+function aliportfolio_enqueue_styles_register() {
     //Google Font
      wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Sen:wght@400..800&display=swap', array(), null);
     // Slick CSS
@@ -53,8 +53,10 @@ function aliportfolio_enqueue_styles() {
     // Custom JS
     wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), time(), true);
 }
-add_action('wp_enqueue_scripts', 'aliportfolio_enqueue_styles');
+add_action('wp_enqueue_scripts', 'aliportfolio_enqueue_styles_register');
 
 
 get_template_part('inc/CPT/services');
 get_template_part('inc/CPT/educations');
+
+get_template_part('inc/customizer/top-skills');

@@ -26,7 +26,9 @@
                             </p>
                             <div class="flex-social mt-40">
                                 <div class="button">
-                                    <a class="btn-style-regular" href="#contact"><span>Hire Me Now</span> <i class="fas fa-arrow-right"></i></a>
+                                    <a class="btn-style-regular" href="#contact"><span>Hire Me Now</span>
+                                     <?php get_template_part("assets/svg/right");?>
+                                    </a>
                                 </div>
                                 <ul class="social-info">
                                     <li>

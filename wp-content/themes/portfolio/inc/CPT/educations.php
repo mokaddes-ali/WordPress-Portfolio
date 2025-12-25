@@ -3,7 +3,7 @@
  * Register Educations Custom Post Type
  */
 
-function aliportfolio_education_register(){
+function aliportfolio_education_cpt_register(){
     $labels = array(
         "name"               => __("Educations","aliportfolio"),
         "singular_name"      => __("Education","aliportfolio"),
@@ -39,7 +39,7 @@ function aliportfolio_education_register(){
 
     register_post_type("educations", $args );
 }
-add_action("init","aliportfolio_education_register");
+add_action("init","aliportfolio_education_cpt_register");
 
 
 function aliportfolio_education_add_meta_box(){
