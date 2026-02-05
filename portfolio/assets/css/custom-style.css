@@ -6,10 +6,18 @@
   background-color: #061016;
   width: 100%;
   height: auto;
-  position: sticky;
-  top: -20px;
+  position: fixed;
+  top: 0;
   z-index: 1000;
+  transition: background-color 1s ease, box-shadow 1s ease;
 }
+
+.header-section.scroll-navbar-color{
+    background-color: #06349e;
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+	transition: background-color 1s ease, box-shadow 1s ease;
+}
+
 
 .header-wrapper {
   display: flex;
@@ -20,7 +28,7 @@
 
 .logo a img {
   display: inline-block;
-  width: 100%;
+  width: 180px;
   height: auto;
   margin-top: 7px;
 }

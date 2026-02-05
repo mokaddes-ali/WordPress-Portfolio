@@ -7,14 +7,14 @@
                     <div class="fun-fact-style-one-items">
                         <div class="fun-fact">
                             <div class="counter">
-                                <div class="timer" data-to="18" data-speed="1000">18</div>
+                                <div class="timer" data-time="2000">18</div>
                                 <div class="operator">+</div>
                             </div>
                             <span class="medium">Years of Experience</span>
                         </div>
                         <div class="fun-fact">
                             <div class="counter">
-                                <div class="timer" data-to="56" data-speed="1000">56</div>
+                                <div class="timer" data-time="1000">56</div>
                                 <div class="operator">K</div>
                             </div>
                             <span class="medium">Projects completed</span>

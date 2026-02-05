@@ -1,24 +1,47 @@
 jQuery(document).ready(function($){
+    console.log('loading custom js')
     /*----- menu icon toggle -----*/
     $("#navPhone").hide();
     $(".menu-btn").click(function(){
         $("#navPhone").fadeToggle();
     });
 
-    //scroll button
-
-    $(window).on('load scroll', function () {
-        if($(this).scrollTop() > 200){
-          $('.scroll-top-btn').addClass('show');
-    } else {
-      $('.scroll-top-btn').removeClass('show');
-    }
+     $(window).on('scroll', function () {
+        $('.header-section').toggleClass(
+            'scroll-navbar-color',
+            $(this).scrollTop() > 200
+        );
     });
 
-     $('.scroll-top-btn').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 60);
-    return false;
-  });
+    var typed = new Typed('.title-typed',{
+        strings: ["Mokaddes Ali", "Full Stack Web Developer." ],
+        typeSpeed: 150,
+		backSpeed: 150, 
+		loop: true, 
+    });
+let counterStarted = false;
+$(window).on('scroll', function () {
+    if(!counterStarted && $('.timer').length ) {
+         $('.timer').counterUp({
+        time: $(this).data('time'),
+        delay : 10,
+    });
+    counterStarted = true;
+    }
+})
+
+    // $(window).on('load scroll', function () {
+    //     if($(this).scrollTop() > 200){
+    //       $('.scroll-top-btn').addClass('show');
+    // } else {
+    //   $('.scroll-top-btn').removeClass('show');
+    // }
+    // });
+
+//      $('.scroll-top-btn').click(function () {
+//     $('html, body').animate({ scrollTop: 0 }, 60);
+//     return false;
+//   });
 
 
     /*----- courses section slick add -----*/
