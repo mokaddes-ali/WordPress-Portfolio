@@ -32,6 +32,9 @@ function aliportfolio_enqueue_styles_register() {
     // Slick CSS
     wp_enqueue_style('slick-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css', array(), '1.9.0');
 
+    //animate css
+    wp_enqueue_style('animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', array(), '4.1.1');
+
     wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
 
   //Custom CSS  
@@ -72,7 +75,7 @@ function aliportfolio_enqueue_styles_register() {
     true
 );
     // Custom JS
-    wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), time(), true);
+    wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery', 'waypoints-min-js'), time(), true);
 }
 add_action('wp_enqueue_scripts', 'aliportfolio_enqueue_styles_register');
 

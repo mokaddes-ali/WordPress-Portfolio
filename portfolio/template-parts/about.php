@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-lg-7 pl-80 pl-md-15 pl-xs-15">
                     <div class="about-style-one-info">
-                        <p class="split-text">
+                        <p class="about-description split-text">
                             As a skilled web developer, I specialize in creating responsive, user-friendly websites with a focus on modern design and efficient code. I excel in front-end development, with a deep understanding of HTML, CSS, JavaScript, and various frameworks. My passion is turning ideas into functional and aesthetically pleasing digital experiences.
                         </p>
                         <a class="btn-style-regular btn-border" href="#"><span>Learn More</span> 

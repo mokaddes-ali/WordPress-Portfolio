@@ -3634,3 +3634,12 @@ footer::after {
 		gap: 20px;
 	}
 }
+
+/* animation css */
+.about-description{
+    opacity: 0;
+}
+.about-description.animate__animated{
+    opacity: 1;
+}
+
