@@ -3643,3 +3643,13 @@ footer::after {
     opacity: 1;
 }
 
+
+.skills-progress-bar .progress-{
+	height: 12px;
+	border-radius: 20px;
+	font-size: 14px;
+}
+.progress-bar{
+	background-color: #315bbb !important;
+}
+
