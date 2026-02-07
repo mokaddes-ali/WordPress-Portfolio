@@ -14,13 +14,10 @@ jQuery(document).ready(function($){
     });
 
     var typed = new Typed('.title-typed',{
-        strings: ["Mokaddes Ali", "Full Stack Web Developer." ],
-        smartBackspace:true,
+        strings: ["WordPress Developer.", "Laravel Developer.", "Shpify Developer" ],
         typeSpeed: 150,
-		backSpeed: 150, 
+		backSpeed: 100,
 		loop: true,
-        loopCount:Infinity,
-        startDelay: 1000,
     });
 
 let counterStarted = false;

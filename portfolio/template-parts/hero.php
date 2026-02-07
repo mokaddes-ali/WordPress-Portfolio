@@ -6,41 +6,30 @@
                 <div class="col-lg-12">
                     <div class="banner-style-one-items">
                         <div class="info">
-                            <h1>Hey 👋 I'm <br> <span class="title-typed"></span></h1>
-                            <h2>
-                                <span class="header-caption" id="page-top">
-                                    <!-- type headline start-->
-                                    <span class="cd-headline clip is-full-width">
-                                        <!-- ROTATING TEXT -->
-                                        <span class="cd-words-wrapper">
-                                            <b class="is-visible">Web Developer</b>
-                                            <b class="is-hidden">Professional Coder</b>
-                                            <b class="is-hidden">UI/UX Designer</b>
-                                        </span>
-                                    </span>
-                                    <!-- type headline end -->
+                            <h1>
+                                <?php echo esc_html__( "Hey 👋 I'm", "portfolio"); ?>
+                                <br> 
+                                <span>
+                                    <?php echo esc_html__( "Mokaddes Ali", "portfolio" ); ?>
                                 </span>
-                            </h2>
+                            </h1>
+
+                            <h2><span class="title-typed"></span></h2>
                             <p>
-                                Hi, my name is Dalton Grant and I began using WordPress when it first began. I’ve spent most of my waking hours for the last ten years designing, programming and operating WordPress sites.
+                                Hi, my name is Mokaddes Ali and I began using WordPress when it first began. I’ve spent most of my waking hours for the last ten years designing, programming and operating WordPress sites.
                             </p>
                             <div class="flex-social mt-40">
                                 <div class="button">
-                                    <a class="btn-style-regular" href="#contact"><span>Hire Me Now</span>
+                                    <a class="btn-style-regular" href="#contact"><span>My Works </span>
                                      <?php get_template_part("assets/svg/right");?>
                                     </a>
                                 </div>
-                                <ul class="social-info">
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fab fa-dribbble"></i></a>
-                                    </li>
-                                </ul>
+                                <div class="button">
+                                    <a class="btn-style-regular" href="#contact"><span> Download CV </span>
+                                     <?php get_template_part("assets/svg/right");?>
+                                    </a>
+                                </div>
+                               
                             </div>
                         </div>
                         <div class="thumb">
@@ -54,3 +43,15 @@
         </div>
     </div>
     <!-- End Banner -->
+
+     <!-- <ul class="social-info">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                                    </li>
+                                </ul> -->

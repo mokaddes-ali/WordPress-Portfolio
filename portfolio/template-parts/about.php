@@ -49,30 +49,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="skills-progress-bar">
-
-                <label for="">Html</label>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">90%</div>
-                </div>
-
-                 <label for="">CSS</label>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">90%</div>
-                </div>
-
-                 <label for="">JavaScript</label>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">90%</div>
-                </div>
-
-                 <label for="">PHP</label>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">90%</div>
-                </div>
-            </div>
-
         </div>
     </div>
     <!-- End About -->

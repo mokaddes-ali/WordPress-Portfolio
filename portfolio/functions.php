@@ -1,12 +1,12 @@
 <?php 
 
-function aliportfolio_theme_setup(){
+function portfolio_theme_setup(){
 
     add_theme_support('post-thumbnails');
 
     add_theme_support('custom-logo',array(
-        'height' => 60,
-        'width'=> 180,
+        'height' => 200,
+        'width'=> 200,
     ));
      
     // add_image_size('custom-courses-image',370,278,true);
@@ -22,11 +22,11 @@ function aliportfolio_theme_setup(){
     ));
 }
 
-add_action('after_setup_theme','aliportfolio_theme_setup');
+add_action('after_setup_theme','portfolio_theme_setup');
 
 
 
-function aliportfolio_enqueue_styles_register() {
+function portfolio_enqueue_styles_register() {
     //Google Font
      wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&family=Sen:wght@400..800&display=swap', array(), null);
     // Slick CSS
@@ -77,7 +77,7 @@ function aliportfolio_enqueue_styles_register() {
     // Custom JS
     wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery', 'waypoints-min-js'), time(), true);
 }
-add_action('wp_enqueue_scripts', 'aliportfolio_enqueue_styles_register');
+add_action('wp_enqueue_scripts', 'portfolio_enqueue_styles_register');
 
 
 get_template_part('inc/CPT/services');

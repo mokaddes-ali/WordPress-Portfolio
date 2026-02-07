@@ -1,36 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Sen:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800&display=swap');
 
+
 /*------ Header start -----*/
-.header-section {
-  background-color: #061016;
+header {
   width: 100%;
   height: auto;
-  position: fixed;
-  top: 0;
+  position: sticky;
   z-index: 1000;
-  transition: background-color 1s ease, box-shadow 1s ease;
 }
-
-.header-section.scroll-navbar-color{
-    background-color: #06349e;
-    box-shadow: 0 6px 20px rgba(0,0,0,.15);
-	transition: background-color 1s ease, box-shadow 1s ease;
-}
-
 
 .header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 0 16px 0;
+  padding: 20px 0 0 0;
 }
 
 .logo a img {
   display: inline-block;
-  width: 180px;
+  width: 100%;
   height: auto;
-  margin-top: 7px;
 }
 
 .menu-button-wrapper {
@@ -40,26 +30,16 @@
   gap: 70px;
 }
 
-/* Desktop menu row */
-nav.main-menu ul {
+.main-menu ul {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 42px;
   margin-top: 2px;
 }
 
-/* Mobile menu column */
-nav.main-menu-phone ul {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-bottom: 35px;
-}
-
 .main-menu ul li a,
 .main-menu-phone ul li a {
-  color: white;
+  color: #5F5B53;
   text-align: center;
   font-weight: 400;
   line-height: 175%;
@@ -89,9 +69,8 @@ nav.main-menu-phone ul {
   left: 0;
 }
 
-.menu-button-wrapper .button button,
-.menu-item-19,
-.menu-div .button button {
+.menu-button-wrapper .button a,
+.menu-div .button a {
   background-color: #171100;
   width: 144px;
   height: 50px;
@@ -110,7 +89,7 @@ nav.main-menu-phone ul {
 }
 
 /*----- btn hover effect -----*/
-.btn-black button::after {
+.btn-black a::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -124,11 +103,11 @@ nav.main-menu-phone ul {
   z-index: -2;
 }
 
-.btn-black button:hover::after {
+.btn-black a:hover::after {
   transform: scaleX(1);
 }
 
-.menu-div .button button {
+.menu-div .button a {
   width: 100%;
 }
 
@@ -136,7 +115,8 @@ nav.main-menu-phone ul {
   display: block;
 }
 
-/*----- phone menu background -----*/
+
+/*----- menu mar phone mobile phone -----*/
 #navPhone {
   width: 100%;
   height: 100%;
@@ -158,84 +138,84 @@ nav.main-menu-phone ul {
   padding: 25px 5%;
 }
 
-/*===================== RESPONSIVE =====================*/
 
-/* Large desktops */
+nav.main-menu-phone ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
 @media(min-width: 1220px){
-  .menu-btn {
+    .menu-btn {
     display: none;
-  }
-  .menu-button-wrapper .button{
-    display: block;
-  }
 }
 
-/* Large Tablets & Small Laptops */
+.menu-button-wrapper .button{
+    display: block;
+}
+}
+/*-----  Large Tablets & Small Laptops -----*/
 @media (max-width: 1220px){
-  .menu-button-wrapper .button{
+    .menu-button-wrapper .button{
     display: block;
-  }
-  .menu-btn {
+}
+    .menu-btn {
     display: none;
-  }
-  header{
-    padding: 0 5%;
-  }
-  section{
-    padding: 0 5% !important;
-  }
+}
+    header{
+        padding: 0 5%;
+    }
+    section{
+        padding: 0 5% !important;
+    }
 }
 
-/* Tablets & Medium Devices */
+
+/*----- Tablets & Medium Devices -----*/
 @media (max-width: 991.98px){
-  .menu-button-wrapper .button{
+    .menu-button-wrapper .button{
     display: block;
-  }
-  .menu-button-wrapper{
-    gap: 30px;
-  }
-  nav.main-menu ul{
-    gap: 25px;
-  }
-  .menu-button-wrapper .button a{
-    height: 40px;
-  }
+}
+    .menu-button-wrapper{
+        gap: 30px;
+    }
+    .main-menu ul{
+        gap: 25px;
+    }
+    .menu-button-wrapper .button a{
+        height: 40px;
+    }
 }
 
-/* Mobile Phones */
+
+/*----- Mobile Phones (Landscape & Portrait) -----*/
 @media (max-width: 767.98px){
-  .menu-button-wrapper .button{
+    .menu-button-wrapper .button{
     display: block;
-  }
-  #navPhone{
-    display: block;
-  }
-  nav.main-menu {
-    display: none;
-  }
-  .menu-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+}
+    
+    #navPhone{
+        display: block;
+    }
+    nav.main-menu {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-/* Small Mobile */
+
+/*----- mobile phone -----*/
 @media (max-width: 575px){
-  .menu-button-wrapper .button{
+       .menu-button-wrapper .button{
     display: block;
-  }
-  header{
-    top: -4px;
-  }
-  .header-wrapper{
-    padding: 25px 0 16px 0;
-  }
-  .menu-button-wrapper .button {
-    display: none;
-  }
 }
-
+}
 
 
 
@@ -1521,7 +1501,7 @@ xclip
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 	grid-column-gap: 200px;
-	padding-top: 80px;
+	padding-top: 60px;
 }
 
 .banner-style-one-area {
