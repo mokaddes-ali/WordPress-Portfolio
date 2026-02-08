@@ -1,12 +1,12 @@
-  <!-- Start Partner 
-    ============================================= -->
-    <div class="partner-style-one-area text-center default-padding overflow-hidden">
+<div class="partner-style-one-area text-center default-padding overflow-hidden">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="site-heading text-center">
-                        <h4 class="sub-title">Partner</h4>
-                        <h2 class="title split-text">With The World Premier 80+ Brands</h2>
+                        <h4 class="sub-title">Other Tools</h4>
+                        <h2 class="title split-text">
+                           Experince with 10+ Tools web related
+                        </h2>
                     </div>
                 </div>
             </div>

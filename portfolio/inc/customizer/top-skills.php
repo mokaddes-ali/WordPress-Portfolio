@@ -98,8 +98,24 @@ for($i=1; $i<=6; $i++ ){
             'section' => 'top_skills_section'
      ));
 
-
-
+     // Hero section 
+     $wp_customizer->add_section('hero_section', array(
+          'title' => 'Hero Section',
+          'priority' => 140,
+     ));
+     $wp_customizer->add_setting('hero_section_img', array(
+          'default' => '',
+     ));
+     $wp_customizer->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customizer,
+        'hero_section_img',
+        array(
+            'label'   => __('Hero Image', 'portfolio'),
+            'section' => 'hero_section',
+        )
+    )
+);
 }
 
 }

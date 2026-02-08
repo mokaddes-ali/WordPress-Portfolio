@@ -6,7 +6,7 @@
  */
 ?>
 
-    <div class="fun-factor-area default-padding overflow-hidden">
+    <div id="skills" class="fun-factor-area default-padding overflow-hidden">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -14,7 +14,7 @@
                         <h4 class="sub-title">
                         <?php echo esc_html( get_theme_mod('top_skills_heading', 'Top Skills') ); ?>
                         </h4>
-                        <h2 class="title split-text">
+                        <h2 class="title">
                             <?php echo esc_html( get_theme_mod('top_skills_heading_two', 'See my expertise') ); ?>
                         </h2>
                     </div>

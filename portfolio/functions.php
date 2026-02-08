@@ -5,14 +5,10 @@ function portfolio_theme_setup(){
     add_theme_support('post-thumbnails');
 
     add_theme_support('custom-logo',array(
-        'height' => 200,
-        'width'=> 200,
+        // 'height' => 200,
+        // 'width'=> 200,
     ));
-     
-    // add_image_size('custom-courses-image',370,278,true);
-    // add_image_size('custom-blog-image',370,250,true);
     
-
     register_nav_menus(array(
     'portfolio_header_menu' => __('Portfolio Header Menu','mokaddesAli'),
     'portfolio_mobile_menu' => __('Portfolio Mobile Menu','mokaddesAli'),
@@ -84,3 +80,4 @@ get_template_part('inc/CPT/services');
 get_template_part('inc/CPT/educations');
 
 get_template_part('inc/customizer/top-skills');
+

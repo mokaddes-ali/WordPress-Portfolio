@@ -31,18 +31,70 @@ $(window).on('scroll', function () {
     }
 });
 
-$('.about-description').waypoint(function(direction){
-    if (direction === 'down') {
+var waypoint = new Waypoint( {
+  element: document.querySelector('.about-description'),
+  handler: function(direction) {
+     if (direction === 'down') {
             $('.about-description')
-                .removeClass('animate__animated animate__fadeInRight')
                 .addClass('animate__animated animate__fadeInRight');
-            }
-            if (direction === 'up') {
-                $('.about-description').removeClass('animate__animated animate__fadeInRight');
-            }
-        },{
-            offset: '100%'
-        } );
+        }
+
+        if (direction === 'up') {
+            $('.about-description')
+                .removeClass('animate__animated animate__fadeInRight');
+        }
+    },
+
+    offset: '100%'
+});
+// $('.about-description').waypoint(function(direction){
+//     if (direction === 'down') {
+//             $('.about-description')
+//                 .removeClass('animate__animated animate__fadeInRight')
+//                 .addClass('animate__animated animate__fadeInRight');
+//             }
+//             if (direction === 'up') {
+//                 $('.about-description').removeClass('animate__animated animate__fadeInRight');
+//             }
+//         },{
+//             offset: '100%'
+//         } );
+const scrollPercentage = () => {
+
+    let progress = $("#progress-top");
+
+    let scrollTop    = $(window).scrollTop();
+    let scrollHeight = $(document).height() - $(window).height();
+
+    if (scrollHeight <= 0) return;
+
+    let percent = Math.round((scrollTop / scrollHeight) * 100);
+
+    progress.css(
+        "width", percent + '%'
+    );
+};
+
+const scrollTopFunc = () => {
+    let scrollTop    = $(window).scrollTop();
+    const scrollBtn = $('.scroll-top-btn');
+    if( scrollTop > 200 ) {
+        scrollBtn.addClass('show');
+    } else{
+        scrollBtn.removeClass('show');
+    }
+}
+
+     $('.scroll-top-btn').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 90);
+    return false;
+     });
+
+$(window).on("scroll load", function () {
+    scrollPercentage();
+    scrollTopFunc();
+});
+
 
     /*----- courses section slick add -----*/
     $(".slick-items").slick({ 
